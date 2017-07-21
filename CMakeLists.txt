@@ -15,14 +15,8 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
    FILES
    BodypartDetection.msg
-   PersonDetection.msg
-   PersonDetections.msg
-)
-
-## Generate services in the 'srv' folder
-add_service_files(
-  FILES
-  GetPersons.srv
+   PeoplePose.msg
+   PeoplePoseArray.msg
 )
 
 ## Generate added messages and services with any dependencies listed here

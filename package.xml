@@ -4,7 +4,7 @@
   <version>0.0.0</version>
   <description>The openpose_ros_msgs package</description>
 
-  <maintainer email="thba1590@gmail.como">baymax</maintainer>
+  <maintainer email="thba1590@gmail.com">baymax</maintainer>
 
   <license>TODO</license>
 
@@ -12,10 +12,13 @@
   <build_depend>message_generation</build_depend>
   <build_depend>std_msgs</build_depend>  
   <build_depend>sensor_msgs</build_depend>  
+  <build_depend>geometry_msgs</build_depend>
 
   <run_depend>message_runtime</run_depend>
   <run_depend>std_msgs</run_depend>  
   <run_depend>sensor_msgs</run_depend>  
+  <run_depend>geometry_msgs</run_depend>  
+
   <export>
 
   </export>
