@@ -1,16 +1,13 @@
 <launch>
 
+  <arg name="remote_machine" default="hsr42" />
+
   <machine
       name="bjsk"
       address="192.168.101.2"
       user="bjsk"
-      env-loader="/home/bjsk/publicWorkspace/dev/ros/indigo/devel/remote_env_loader_hsr42.sh"
+      env-loader="/home/bjsk/publicWorkspace/dev/ros/indigo/devel/remote_env_loader_$(arg remote_machine).sh"
   />
-
-  <!-- <arg name="input_data_path" default="/home/bjsk/publicWorkspace/data/handOver" /> -->
-  <!-- <arg name="input_bag_files" default="waving_ba_notlooking_ishikura_3" /> -->
-
-  <!-- <node machine="bjsk" pkg="rosbag" type="play" name="player" output="screen" args="-l $(arg input_data_path)/$(arg input_bag_files).bag" /> -->
 
   <param name="net_resolution" value="656x368" />
   <param name="camera_topic" value="/hsrb/head_rgbd_sensor/rgb/image_rect_color" />
